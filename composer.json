@@ -1,0 +1,20 @@
+{
+    "name": "rooftopcms/rooftop-resource-metadata",
+    "description": "Include the custom post metadata in the responses, under a post-type specific key",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Rooftop CMS",
+            "email": "hello@rooftopcms.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "type": "wordpress-muplugin",
+    "require": {
+    }
+}
