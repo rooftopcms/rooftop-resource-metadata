@@ -12,11 +12,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Rooftop Resource Metadata
- * Plugin URI:        http://error.agency
+ * Plugin URI:        https://github.com/rooftopcms/rooftop-resource-metadata
  * Description:       Include the custom post metadata in the responses, under a post-type specific key
- * Version:           1.0.0
- * Author:            Error
- * Author URI:        http://error.agency
+ * Version:           1.2.1
+ * Author:            RooftopCMS
+ * Author URI:        http://rooftopcms.com
  * License:           GPL-3.0+
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       rooftop-resource-metadata
