@@ -30,7 +30,9 @@ function add_update_attribute_hooks( $prepared_post, $request ) {
     }
 
     $content_attributes = $request['content'];
-    if( $content_attributes && array_key_exists( 'content', $content_attributes['basic'] ) ) {
+    $basic_content = @$content_attributes['basic'] ? $content_attributes['basic'] : [];
+
+    if( $content_attributes && array_key_exists( 'content', $basic_content ) ) {
         $prepared_post->post_content = array_key_exists( 'content', $content_attributes['basic'] ) ? $content_attributes['basic']['content'] : $request['content'];
     }
 
