@@ -14,7 +14,7 @@
  * Plugin Name:       Rooftop Resource Metadata
  * Plugin URI:        https://github.com/rooftopcms/rooftop-resource-metadata
  * Description:       Include the custom post metadata in the responses, under a post-type specific key
- * Version:           1.2.1
+ * Version:           1.2.2
  * Author:            RooftopCMS
  * Author URI:        http://rooftopcms.com
  * License:           GPL-3.0+
@@ -30,7 +30,7 @@ function add_update_attribute_hooks( $prepared_post, $request ) {
     }
 
     $content_attributes = $request['content'];
-    $basic_content = @$content_attributes['basic'] ? $content_attributes['basic'] : [];
+    $basic_content = array_key_exists( 'basic', $content_attributes ) ? $content_attributes['basic'] : [];
 
     if( $content_attributes && array_key_exists( 'content', $basic_content ) ) {
         $prepared_post->post_content = array_key_exists( 'content', $content_attributes['basic'] ) ? $content_attributes['basic']['content'] : $request['content'];
